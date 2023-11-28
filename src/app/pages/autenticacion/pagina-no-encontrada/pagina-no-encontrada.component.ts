@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
 
     <div class="not-found-container">
-    
+
       <img src="../../../../assets/img/not-found.jpg" alt="Imagen no encontrada" class="not-found-image">
 
     </div>

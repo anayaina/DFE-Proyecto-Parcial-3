@@ -1,15 +1,22 @@
-$color-primary: hsl(210, 29%, 29%);
-$color-secondary: hsl(204, 70%, 53%);
-$color-tertiary: hsl(167, 40%, 55%);
-$color-warning: hsl(0, 44%, 61%) !default;
 
-$background-color: #f3f6f9;
-$font-family: 'Jost', sans-serif;
+$color-primary: #78c3ac;
+$color-secondary: #f3979b;
+$color-seccess: #57cd9d;
+$color-info: #6cc3d5c8;
+$color-warning: #FECE67;
+$color-danger: #fe7951;
+$color-not-to-white: #f5f7f6;
+$color-not-to-black: #242526;
+$color-black: #000000;
+$color-white: #ffffff;
+
+$background-color: #f5f7f6;
+$font-family: 'Poppins', 'Patrick Hand SC', sans-serif;
 $font-size: 14px;
-$font-color: hsl(210, 29%, 22%);
-$font-color-light: #fff;
+$font-color: #000000;
+$font-color-light: #ffffff;
 
-$header-height: 88px;
+$header-height: 125px;
 
 $workarea-background-color: #ffffff;
 $workarea-min-height: calc(100vh - 136px);

@@ -1,10 +1,12 @@
 @import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Jost');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,15 +15,16 @@ body {
   font-size: $font-size;
   color: $font-color;
   margin: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 main {
-  background-color: $workarea-background-color;
-  box-shadow: rgba(255, 255, 255, 0.25) 0 0 100px 0;
-  min-height: $workarea-min-height;
+  box-shadow: rgba(214, 233, 236, 0.802) 0 0 100px 0;
+  min-height: calc(100vh - 136px);
   border-radius: 8px;
   padding: 1rem 2rem;
-  margin:  1.5rem;
+  margin: 1.5rem;
 }
 
 h1 {

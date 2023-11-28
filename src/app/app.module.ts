@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AutenticacionModule } from './pages/autenticacion/autenticacion.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { InventarioModule } from './pages/inventario/inventario.module';
+import { VentaModule } from './pages/ventas/ventas.module';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { InventarioModule } from './pages/inventario/inventario.module';
     AutenticacionModule,
     DashboardModule,
     InventarioModule,
+    VentaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

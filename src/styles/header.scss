@@ -1,95 +1,87 @@
 @import 'variables';
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  background-color: $color-tertiary;
-  box-shadow: 0 8px 8px -4px rgb(186, 186, 186);
-  color: $font-color-light;
-  text-align: center;
+  background: $color-info;
+  color: $color-white;
   font-size: 1.25rem;
   line-height: 1.25rem;
   max-height: $header-height;
   min-height: $header-height;
   height: $header-height;
+}
 
-  .app-title {
-    padding: 0.5rem 2rem;
+  nav,
+  .nav-links {
+    display: flex;
   }
 
   nav {
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    ul {
-      display: block;
-      text-transform: uppercase;
-      list-style: none;
-      padding: 0;
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  a {
+    color: $color-black;
+    text-decoration: none;
+    text-decoration-color: $color-white;
+  }
+
+  a:hover {
+    color: $color-warning;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: $color-warning;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    header {
       text-align: center;
-      margin: 0;
-    }
+      font-size: 1rem;
+      line-height: 1rem;
 
-    li {
-      display: inline;
-      margin-right: 2rem;
-      padding: 0.5rem 2rem;
-      transition: color 0.3s ease;
+      nav {
 
-      &:hover {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
+        li {
+          margin-right: 1rem;
+        }
+
       }
-    }
-
-    a {
-      text-decoration: none;
-      color: $font-color-light;
-    }
-
-    a.active {
-      font-weight: bold;
-    }
-
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-
-  header {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
-
-    nav {
-
-      li {
-        margin-right: 1rem;
-      }
-
     }
   }
-}
 
-@media screen and (max-width: 450px) {
+  @media screen and (max-width: 450px) {
 
-  header {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
+    header {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1rem;
 
-    nav {
+      nav {
 
-      ul {
-        display: flex;
-        flex-direction: column;
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
+
+        li {
+          margin-right: 0;
+        }
+
       }
-
-      li {
-        margin-right: 0;
-      }
-
     }
   }
-}
+
+

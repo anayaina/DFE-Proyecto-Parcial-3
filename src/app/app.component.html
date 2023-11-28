@@ -5,19 +5,24 @@
   </div>
 
   <nav>
-    <ul>
-      <li>
-        <a routerLink="/dashboard" routerLinkActive="active">Inicio</a>
-      </li>
-
-      <li>
-        <a routerLink="/inventario" routerLinkActive="active">Inventario</a>
-      </li>
-
-      <li>
-        <a routerLink="/avance-obra" routerLinkActive="active">Avance de obra</a>
-      </li>
-    </ul>
+    <div class="logo">
+      <a href="index.html" class="logo-toggle">
+        <img src="assets/img/logo.png" alt="Logo Index">
+      </a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li>
+          <a routerLink="/dashboard" routerLinkActive="active">Home</a>
+        </li>
+        <li>
+          <a routerLink="/avance-obra" routerLinkActive="active">Ventas</a>
+        </li>
+        <li>
+          <a routerLink="/inventario" routerLinkActive="active">Catálogo</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
 </header>

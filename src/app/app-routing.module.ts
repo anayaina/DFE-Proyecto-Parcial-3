@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { InicioComponent } from './pages/dashboard/inicio/inicio.component';
 import { ExploradorCasasComponent } from './pages/inventario/explorador-casas/explorador-casas.component';
+import { VentaComponent } from './pages/ventas/venta/ventas.component';
 import { PaginaNoEncontradaComponent } from './pages/autenticacion/pagina-no-encontrada/pagina-no-encontrada.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: InicioComponent },
   { path: 'inventario', component: ExploradorCasasComponent },
+  { path: 'ventas', component: VentaComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: PaginaNoEncontradaComponent }
 ];
