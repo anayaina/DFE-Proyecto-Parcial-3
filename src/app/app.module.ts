@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { AutenticacionModule } from './pages/autenticacion/autenticacion.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { InventarioModule } from './pages/inventario/inventario.module';
-import { ProgresoConstruccionModule } from './pages/progreso-construccion/progreso-construccion.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { ProgresoConstruccionModule } from './pages/progreso-construccion/progre
     AutenticacionModule,
     DashboardModule,
     InventarioModule,
-    ProgresoConstruccionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
