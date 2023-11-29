@@ -18,7 +18,7 @@ export interface Videogame {
 export const listaVideogameDummy: Videogame[] = [
   {
     "id": 1,
-    "imagen": "sims",
+    "imagen": "sims.jpg",
     "nombre": "Los Sims 4",
     "genero": "Simulacion",
     "plataformas": [
@@ -33,7 +33,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 2,
-    "imagen": "cod",
+    "imagen": "cod.jpg",
     "nombre": "Call of Duty: Modern Warfare II",
     "genero": "Accion",
     "plataformas": [
@@ -48,7 +48,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 3,
-    "imagen": "mario",
+    "imagen": "mario.jpg",
     "nombre": "Mario Kart 8 Deluxe",
     "genero": "Carreras",
     "plataformas": [
@@ -61,7 +61,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 4,
-    "imagen": "minecraft",
+    "imagen": "minecraft.jpg",
     "nombre": "Minecraft",
     "genero": "Sandbox",
     "plataformas": [
@@ -79,7 +79,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 5,
-    "imagen": "gta",
+    "imagen": "gta.jpg",
     "nombre": "Grand Theft Auto V",
     "genero": "Accion",
     "plataformas": [
@@ -94,7 +94,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 6,
-    "imagen": "f1",
+    "imagen": "f1.jpg",
     "nombre": "F1 23",
     "genero": "Deportes",
     "plataformas": [
@@ -109,7 +109,7 @@ export const listaVideogameDummy: Videogame[] = [
   },
   {
     "id": 7,
-    "imagen": "fifa",
+    "imagen": "fifa23.jpg",
     "nombre": "FIFA 23",
     "genero": "Deportes",
     "plataformas": [
