@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { InicioComponent } from './pages/dashboard/inicio/inicio.component';
-import { ExploradorCasasComponent } from './pages/inventario/explorador-casas/explorador-casas.component';
-import { VentaComponent } from './pages/ventas/venta/ventas.component';
+import { ExploradorJuegosComponent } from './pages/juegos/explorador-juegos/explorador-juegos.component';
+import { CatalogoComponent } from './pages/catalogo/catalogo/catalogo.component';
 import { PaginaNoEncontradaComponent } from './pages/autenticacion/pagina-no-encontrada/pagina-no-encontrada.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: InicioComponent },
-  { path: 'inventario', component: ExploradorCasasComponent },
-  { path: 'ventas', component: VentaComponent },
+  { path: 'inventario', component: ExploradorJuegosComponent },
+  { path: 'catalogo', component: CatalogoComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: PaginaNoEncontradaComponent }
 ];

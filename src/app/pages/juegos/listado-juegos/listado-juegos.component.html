@@ -1,0 +1,46 @@
+<div class="table-container">
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Genero</th>
+        <th>Plataformas</th>
+        <th>Estatus</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th>Vendedor</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let Videogame of listadoJuegos" (click)="JuegosSeleccionada = Videogame">
+        <td> <strong>{{ Videogame.id }}</strong> </td>
+        <td> <img [src]="rutaImagen + Videogame.imagen" [alt]="Videogame.id"> </td>
+        <td> {{ Videogame.nombre }}</td>
+        <td> {{ Videogame.genero }}</td>
+        <td> {{ Videogame.plataformas }}</td>
+        <td> <span class="tag">{{ Videogame.estatus }}</span> </td>
+        <td>{{ Videogame.descripcion }}</td>
+        <td>{{ Videogame.precio | currency }}</td>
+        <td>{{ !!Videogame.vendedor ? Videogame.vendedor : 'N/A' }}</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<div class="message" *ngIf="listadoJuegos.length === 0">
+  <p>{{ cargandoJuegos ? 'Cargando...' : 'No se encontraron registros...'}}</p>
+</div>
+
+
+<app-detalle-juegos *ngIf="JuegosSeleccionada !== null"
+  [juegos]="JuegosSeleccionada"
+  (close)="JuegosSeleccionada = null">
+
+</app-detalle-juegos>

@@ -1,10 +1,37 @@
 @import 'variables';
 
+.welcome {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.welcome h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  color: $color-secondary;
+}
+
+.welcome p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  color: $color-not-to-black;
+}
+
+.welcome-img {
+  width: 15%;
+  height: 15%;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
 section#proyectos {
 
   .title-proyectos {
-    font-weight: bold;
     margin-bottom: 50px;
+    font-weight: bold;
     font-size: 4rem;
     text-align: center;
     color: $color-secondary;

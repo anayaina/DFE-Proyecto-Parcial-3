@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 
 import { AutenticacionModule } from './pages/autenticacion/autenticacion.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
-import { InventarioModule } from './pages/inventario/inventario.module';
-import { VentaModule } from './pages/ventas/ventas.module';
+import { JuegosModule } from './pages/juegos/juegos.module';
+import { CatalogoModule } from './pages/catalogo/catalogo.module';
 
 
 @NgModule({
@@ -22,8 +22,8 @@ import { VentaModule } from './pages/ventas/ventas.module';
 
     AutenticacionModule,
     DashboardModule,
-    InventarioModule,
-    VentaModule
+    JuegosModule,
+    CatalogoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
