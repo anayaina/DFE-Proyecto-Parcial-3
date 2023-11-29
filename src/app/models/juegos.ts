@@ -15,7 +15,7 @@ export interface Videogame {
   vendedor: string;
 }
 
-export const videogameListDummy: Videogame[] = [
+export const listaVideogameDummy: Videogame[] = [
   {
     "id": 1,
     "imagen": "sims",

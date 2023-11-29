@@ -16,22 +16,19 @@
     </thead>
     <tbody>
 
-      <tr *ngFor="let Videogame of listadoJuegos" (click)="JuegosSeleccionada = Videogame">
-        <td> <strong>{{ Videogame.id }}</strong> </td>
-        <td> <img [src]="rutaImagen + Videogame.imagen" [alt]="Videogame.id"> </td>
-        <td> {{ Videogame.nombre }}</td>
-        <td> {{ Videogame.genero }}</td>
-        <td> {{ Videogame.plataformas }}</td>
-        <td> <span class="tag">{{ Videogame.estatus }}</span> </td>
-        <td>{{ Videogame.descripcion }}</td>
-        <td>{{ Videogame.precio | currency }}</td>
-        <td>{{ !!Videogame.vendedor ? Videogame.vendedor : 'N/A' }}</td>
+      <tr *ngFor="let juegos of listadoJuegos" (click)="juegosSeleccionada = juegos">
+        <td> <strong>{{ juegos.id }}</strong> </td>
+        <td> <img [src]="rutaImagen + juegos.imagen" [alt]="juegos.id"> </td>
+        <td> {{ juegos.nombre }}</td>
+        <td> {{ juegos.genero }}</td>
+        <td> {{ juegos.plataformas }}</td>
+        <td> <span class="tag">{{ juegos.estatus }}</span> </td>
+        <td>{{ juegos.descripcion }}</td>
+        <td>{{ juegos.precio | currency }}</td>
+        <td>{{ !!juegos.vendedor ? juegos.vendedor : 'N/A' }}</td>
       </tr>
-
     </tbody>
-
   </table>
-
 </div>
 
 <div class="message" *ngIf="listadoJuegos.length === 0">
@@ -39,8 +36,7 @@
 </div>
 
 
-<app-detalle-juegos *ngIf="JuegosSeleccionada !== null"
-  [juegos]="JuegosSeleccionada"
-  (close)="JuegosSeleccionada = null">
-
+<app-detalle-juegos *ngIf="juegosSeleccionada !== null"
+  [juegos]="juegosSeleccionada"
+  (close)="juegosSeleccionada = null">
 </app-detalle-juegos>

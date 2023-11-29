@@ -6,6 +6,7 @@ import { Videogame } from 'src/app/models/juegos';
   selector: 'app-detalle-juegos',
   templateUrl: './detalle-juegos.component.html'
 })
+
 export class DetalleJuegosComponent {
 
   @Input() juegos: Videogame | null = null;

@@ -13,7 +13,7 @@ export class ListadoJuegosComponent {
 
   @Input() cargandoJuegos = false;
 
-  JuegosSeleccionada: Videogame | null = null;
+  juegosSeleccionada: Videogame | null = null;
 
   rutaImagen = '../../../../assets/img/juegos/';
 
